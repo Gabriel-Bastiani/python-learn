@@ -1,13 +1,11 @@
 def main():
     
-
-    print(f'Escreva um programa que converta uma temperatura digitando em graus Celsius e converta para graus Fahrenheit.')
+    print('Escreva um programa que pergunte a quantidade de Km percorridos por um carro alugado e a quantidade de dias pelos quais ele foi alugado. Calcule o preço a pagar, sabendo que o carro custa R$60 por dia e R$0,15 por Km rodado.\n')
     
-    temperature = int(input('Qual a temperatura em graus Celcius? '))
-    convertf = float(temperature * 9/5) + 32 
-    #(x °C × 9/5) + 32 = 33,8 °F
-
-    print(f'A temperatura em Fahrenheit é: {convertf:.1f}'
-          )
+    km = float(input('Quantos km percorrido com o carro? ')) * 0.15
+    days = int(input('Quantos dias você ficou com o carro? ')) * 60
+    
+    print(f'Você tera que pagar {km+days}')
+    
 if __name__ == "__main__":
     main()
