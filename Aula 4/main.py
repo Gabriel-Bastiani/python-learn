@@ -38,14 +38,19 @@ def main():
         print('Hoje não é seu aniversário.')
 
     # Desafio 03
-    print('\n##############################################################################################\n')
+    print('\n' + '#' * 94 + '\n')
     print('Desafio 03: Crie um script que leia dois números e mostre a soma entre eles.')
 
     num1 = input('Digite o primeiro número: ')
     num2 = input('Digite o segundo número: ')
     print(f'A soma entre {num1} e {num2} é {int(num1) + int(num2)}.')
-    
+
+
+
+
 if __name__ == "__main__": 
     main()
 
     
+
+ 
