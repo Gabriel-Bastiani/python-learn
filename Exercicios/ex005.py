@@ -15,6 +15,8 @@ def main():
     desafio11()
     desafio12()
     desafio13()
+    desafio14()
+    desafio15()
     extra()
     
     
