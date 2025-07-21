@@ -97,7 +97,11 @@ def desafio20(alum):#Vou usar a mesma lista de alunos que ja tem ali em cima
     
     print(f'Ordem de alunos a apresentar: ', ', '.join(['Aluno: ' + ordem for ordem in ordem_alunos]))
     
+    #podia ter usado o math.shuffle
+    
 def desafio21():
+    
+   print('Faça um Sistema que abra um mp3 de um diretorio\n')
     
    pygame.mixer.init()
    pygame.mixer.music.load('H:/coisas/sons/Sons/Musicas/poze-ingles.mp3')
