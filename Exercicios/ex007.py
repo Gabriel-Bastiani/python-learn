@@ -14,7 +14,7 @@ def main():
             #0123456789
     
     print(f"""Qual tamanho da frase '{frase}' Tamanho: {len(frase)}""")
-    print('Quantas letras (o) possuem entre a posição 0 e 12? ',frase.count('o',0,13))
+    print('Em que posição a letra aparece a priemira vez? ',frase.count('o',0,13)) #pode usar rfibnd - lfind
     print('Qual posição começa as letras (deo): ',frase.find('deo'))
     print('Quando buscado algo que não existe na string, ele mostra o valor -1 ',frase.find('Android'))
     print('Curso' in frase) # aqui ele valida se existe a palavra 'Curso' na frase (True or false)
@@ -126,6 +126,7 @@ def desafio25():
         print('Não! Não tem "Silva" no nome')
     
 def desafio26():
+    
     print("""
           Faça um programa que leia uma frase pelo teclado e mostre:
           Quantas vezes aparece a letra 'A' 
@@ -134,7 +135,34 @@ def desafio26():
 
     frase = input('Qual a frase?  ')
     
+    
     print(f'A Letra "A" aparece na frase {frase.upper().count('A')}')
+    print(f"A primeira ocorrência de 'A' é na posição: {frase.upper().find('A') + 1}")
+    print(f"A última ocorrência de 'A' é na posição: {frase.upper().rfind('A') + 1}")
+    
+def desafio27():
+    
+    print("""
+          Faça um programa que leia o nome completo de uma pessoa,
+          mostrando em seguida o primeiro e o ultimo nome separadamente.
+          EX: Ana Maria de Souza
+          Primeiro: Ana
+          Último: Souza""")
+    
+    name = input('Qual o nome completo?  ')
+    split = name.split()
+    lent = (len(split))
+    
+    print(f'O primeiro nome é: {split[0]}')
+    print(f'O último nome é: {split[lent - 1]}')
+    
+    
     
 if __name__ == "__main__":
     main()
+    desafio22()
+    desafio23()
+    desafio24()
+    desafio25()
+    desafio26()
+    desafio27()
